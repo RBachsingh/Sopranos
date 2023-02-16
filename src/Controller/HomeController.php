@@ -15,10 +15,10 @@ class HomeController extends AbstractController
             'controller_name' => 'HomeController',
         ]);
     }
-    #[Route('/costumer', name: 'costumer')]
-    public function costumer(): Response
+    #[Route('/contact', name: 'contact')]
+    public function contact(): Response
     {
-        return $this->render('home/costumer.html.twig', [
+        return $this->render('home/contact.html.twig', [
             'controller_name' => 'HomeController',
         ]);
     }
