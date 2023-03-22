@@ -1,20 +1,24 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello ProductController!{% endblock %}
+{% block title %}bestel{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
-
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
-
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'C:/xampp/htdocs/Sopranos/src/Controller/ProductsController.php'|file_link(0) }}">src/Controller/ProductController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'C:/xampp/htdocs/Sopranos/templates/product/index.html.twig'|file_link(0) }}">templates/product/index.html.twig</a></code></li>
-    </ul>
-</div>
+    <div class="container">
+        <div class="container-categories">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                {% for products in product %}
+                    <div class="col">
+                        <div class="card">
+                            <img src="#" class="card-img-top" alt="#">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ products.name }}</h5>
+                                <p class="card-text"></p>
+                                <a href="#" class="btn btn-primary">some link</a>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+                </div>
+            </div>
+    </div>
 {% endblock %}

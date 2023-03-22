@@ -7,42 +7,22 @@
         <h1>Sopranos</h1>
         <div class="container-categories">
             <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col">
-                    <div class="card">
-                        <img src="#" class="card-img-top" alt="#">
-                        {% for categories in category %}
-                        <div class="card-body">
-                            <h5 class="card-title">{{categories.name}}</h5>
-                            <p class="card-text">e.</p>
-                            <a href="#" class="btn btn-primary">w</a>
-                            {% endfor %}
+                {% for categories in category %}
+                    <div class="col">
+                        <div class="card">
+                            <img src="#" class="card-img-top" alt="#">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ categories.name}}</h5>
+                                <p class="card-text">e.</p>
+                                <a href="" class="btn btn-primary">some link</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-{#                <div class="col">#}
-{#                    <div class="card">#}
-{#                        <img src="#" class="card-img-top" alt="#">#}
-{#                        <div class="card-body">#}
-{#                            <h5 class="card-title">Vis pizza's</h5>#}
-{#                            <p class="card-text">a.</p>#}
-{#                            <a href="#" class="btn btn-primary">q</a>#}
-{#                        </div>#}
-{#                    </div>#}
-{#                </div>#}
-{#                <div class="col">#}
-{#                    <div class="card">#}
-{#                        <img src="#" class="card-img-top" alt="#">#}
-{#                        <div class="card-body">#}
-{#                            <h5 class="card-title">Vega pizza's</h5>#}
-{#                            <p class="card-text">b.</p>#}
-{#                            <a href="#" class="btn btn-primary">a</a>#}
-{#                        </div>#}
-{#                    </div>#}
-{#                </div>#}
+                {% endfor %}
             </div>
         </div>
     </div>
 
 
-    
+
 {% endblock %}
